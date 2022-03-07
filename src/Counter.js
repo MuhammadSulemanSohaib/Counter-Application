@@ -1,39 +1,38 @@
-// import React , {useState} from "react";
+import React , {useState} from "react";
 
-// function Counter (){
-//     let counter = 0;
+function Counter (){
 
-//     const [counter2 , setCount] = useState(0)
+    let [count , setCount] = useState(0)
 
 //     // const decreamentOperator = () => {
-//     //     setCount(counter2 - 1)
+//     //     setCount(count - 1)
 //     // }
 
 //     // const increamentOperator = () => {
-//     //     setCount(counter2 + 1)
+//     //     setCount(count + 1)
 //     // }
 
 //     // const resetOperator = () => {
 //     //     setCount(0)
 //     // }
 
-//     return(
-//         <div style={{margin:50}}>
+    return(
+        <div style={{margin:50}}>
 
-//             <h2>Value of counter variable is : </h2>
+            <h2>Value of counter variable is : </h2>
 
-//             <button onClick={ () => setCount(counter2 - 1) }> - </button>
+            <button onClick={ () => setCount(count - 1) }> - </button>
 
-//             <span style={{padding:10}}> {counter} </span>
+            <span style={{padding:10}}> {count} </span>
 
-//             <button onClick={ () => setCount(counter2 + 1) }> + </button>
+            <button onClick={ () => setCount(count + 1) }> + </button>
 
-//             <br />
+            <br />
 
-//             <button style = {{margin:20 , padding:2}} onClick={ () => setCount(0) }>Reset</button>
+            <button style = {{margin:20 , padding:2}} onClick={ () => setCount(0) }>Reset</button>
 
-//         </div>
-//     )
-// }
+        </div>
+    )
+}
 
-// export default Counter
+export default Counter
